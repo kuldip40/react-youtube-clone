@@ -33,7 +33,7 @@ const CategoriesBar = () => {
 
   const handleClick = (value) => {
     setActiveElement(value);
-    if (value === "all") {
+    if (value === "All") {
       dispatch(getPopularVideos());
     } else {
       dispatch(getVideosByCategory(value));

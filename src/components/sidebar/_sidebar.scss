@@ -17,10 +17,7 @@
 
   a {
     color: $text-color;
-    &:hover {
-      color: $text-color;
-      text-decoration: none;
-    }
+    text-decoration: none;
   }
 
   li {

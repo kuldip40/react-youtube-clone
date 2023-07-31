@@ -11,9 +11,8 @@ const Header = ({ handleToggleSidebar }) => {
 
   const [input, setInput] = useState("");
 
-  const {
-    user: { photoURL },
-  } = useSelector((state) => state.auth);
+  const { user = {} } = useSelector((state) => state.auth);
+  const { photoURL } = user;
 
   const handleSubmit = (e) => {
     e.preventDefault();
